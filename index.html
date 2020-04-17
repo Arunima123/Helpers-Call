@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Colleges For You</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .notice_line{
+     background-color: silver;
+  }
+
+  div.col-md-6{
+    background-color: silver;
+    object-position: 40 70;
+  }
+
+  /*
+  .col-md-4 col-sm-4 col-12 padd-00{
+    background-color: silver;
+  }
+  */
+  div.sign-up{
+    object-position: -20% 50%;
+  }
+
+  </style>
+  
+</head>
+<body>
+
+
+
+<section class="notice_line">
+    <marquee scrollamount="3">
+      <ul class="list-unstyled">
+       <li><a href="javascript:;"><span style="color:maroon"><h3>Welcome to Colleges For You! You tell us the marks, We tell you the colleges<h3></span></a></li>
+      </ul>  
+      </marquee>   
+</section>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="flash-photos/favicon.ico"></a>
+  <a class="navbar-brand" href="#">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About-us <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sign-up.html">Sign-up</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Logout</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+<!--<div class="jumbotron text-center">
+  <h1>COLLEGES FOR YOU</h1>
+  <p>You tell us the marks, We tell you the colleges!</p> 
+</div>
+-->
+<a name="front-page">
+<section class="slider">
+ <div id="demo" class="carousel slide" data-ride="carousel"> 
+  <div class="carousel-inner">
+    <div class="carousel-item active"> <img src="flash-photos/college.png" alt="" style="height:100%;width:100%;"> </div>
+    <div class="carousel-item"> <img src="flash-photos/college1.png" alt="" style="height:100%;width:100%;">  </div>
+  
+    <div style="position: relative;left:40%;top:90%">
+    <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Login Form</h3>
+                    <?php if(!empty($error_message)) { ?>
+                        <div class="alert alert-danger"><?php echo $error_message; ?></div>
+                    <?php } ?>
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
+                        </div>
+                        <button type="submit" name="submit" class="btn btn-default">Submit</button>
+                        <br>
+                        <button type="button" name="forgot-password" class="btn btn-default"><span style="color:blue"><b>Forgot Password?</b></span></button>
+                    </form>
+                </div>
+            </div>
+          </div>
+  
+<br><br><br><br><br>
+<div class="sign-up" style="color:black">
+  <h4>Not a member?</h4>
+  <a href="sign-up.html"><<h4><span style="color: maroon"><u>Sign up</u></span></a>, and be a part of our community.</h4>
+</div>
+
+</div>
+</div>
+<a class="carousel-control-prev" href="#demo" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> 
+<a class="carousel-control-next" href="#demo" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> 
+</div>
+
+
+</section>
+
+</a>
+
+<div class="container" style="color:black; background-color: silver">
+    <div class="col-md-4 col-sm-4 col-12 padd-00">
+      <h4><b><span style="color:maroon">About us</span></b></h4>
+      <p>This website is specially designed for the following purposes:</p>
+      <p> 1. Give college names depending on the course and the place in India.</p>
+      <p> 2. User eligiblity in different colleges according to his marks using 
+       the College Admission Predictor.</p>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>

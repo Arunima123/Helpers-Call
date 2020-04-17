@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Helpers Call</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ <link rel="shortcut icon" type="image/png" href="https://img.icons8.com/cotton/256/000000/home--v2.png"/>
+ 
+</head>
+<style>
+  .Below-Title{
+    background-color:brown;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+
+  }
+  .sign-up{
+    position: relative;
+    top: 100px;
+    left: 200px;
+  }
+  .col-md-6{
+    object-position: 40 70;
+  }
+  .container{
+    position: relative;
+    width: auto;
+  }
+
+  .Below-Sign-Up{
+    background-color:brown;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+
+  }
+  .container2{
+    position: relative;
+    width: auto;
+    left:200px;
+  }
+
+  .Below-About-Us{
+    background-color:brown;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+
+  }
+
+ 
+  
+</style>
+
+<body style="background-color: bisque;">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="https://img.icons8.com/cotton/64/000000/home--v2.png"/></a>
+        <a class="navbar-brand" href="FrontPage.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="navbar-brand" href="#about-us">About Us<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#contact-us">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">Sign In (Helper)</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">Sign In (Client)</a>
+            </li>
+        </div>
+      </nav>
+      
+      <div class="Below-Title">
+        <rect style="fill:brown;stroke-width:3;stroke:brown" />
+      </div>
+
+     
+      <br><br><br><br><br>
+      <div class="sign-up" style="color:black">
+        <h4>Not a member?</h4>
+        <a href="#"><h4><span style="color:maroon"><u><b>Sign up</b></u></span></a>, and be a part of our community.</h4>
+      </div>
+
+      <div style="position: relative;left:600px;top:90%">
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Sign Up</h3>
+                            <div class="alert alert-danger"></div>
+                        <form method="post">
+                            <div class="form-group">
+                              <label for="exampleInputName1">Full Name</label>
+                              <input type="text" class="form-control" id="exampleInputName1" name="name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Password Again</label>
+                              <input type="password" class="form-control" id="exampleInputPassword2" name="password2" placeholder="Password Again">
+                            </div>
+                            <div class="form-group">
+                              Choose an option <br><br>
+                              <input type="radio" id="exampleInputChoice1" name="helper">
+                              <label for="exampleInputChoice1">I am a Helper</label><br>
+
+                              <input type="radio" id="exampleInputChoice2" name="client">
+                              <label for="exampleInputChoice2">I am a Client</label><br>
+                            </div>
+                            <button type="submit" name="submit" class="btn btn-default" style="background-color: pink;">Submit</button>
+                            
+                        </form>
+                    </div>
+                </div>
+              </div>
+        </div>
+              <br><br><br>
+
+              <div class="Below-Sign-Up">
+                <rect style="fill:silver;stroke-width:3;stroke:silver" />
+              </div>
+
+              <br><br><br>
+
+            <a id="about-us">
+
+             <div class="container" style="color:black; background-color:bisque"> 
+        
+                  <h4><b><span style="color:brown">ABOUT US</span></b></h4>
+                  <br>
+                  <p><span style="color: brown">HELPERS CALL</span> aims to create a healthy, helpful and efficient system of exchanging work and services</p>
+                  <p>between Clients( people who need help with their chores and services) and Helpers( people who can provide</p>
+                  <p>the service and complete the chore).</p>
+                  <p>People can sign up as a Helper,Client or both depending on their personal choice.</p>
+                  <p>Clients can put up their chores and Helpers will put up the prices for which they will complete the chore</p>
+                  <p>and we will make sure that the Client gets the best(cheapest) offer.</p>
+                  <p><span style="color: brown">We hope you enjoy your time with us!</span></p>
+            </div>
+            
+            </a>
+
+            <br>
+
+            <div class="Below-About-Us">
+              <rect style="fill:silver;stroke-width:3;stroke:silver" />
+            </div>
+
+            <br><br><br>
+
+           <div class="container2" style="color:black; background-color:bisque"> 
+      
+                <h4><b><span style="color:brown">Get In Touch</span></b></h4>
+                <br>
+                <p><span style="color: brown">Phone No:</span> 9876543210,8765432109</p>
+                <p><span style="color: brown">Email Id:</span> 123abc@gmail.com</p>
+                <p><span style="color: brown">Facebook (Username/Email Id:)</span> HelpersCallOfficial/234efg@gmail.com</p>
+                <p><span style="color: brown">Instagram Name:</span> helpers_call</p>
+          </div>
+          
+              
+</body>
+</html>
+

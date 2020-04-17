@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign-Up-CFU</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta charset="utf-8">
+  <style>
+  	body{
+  		background-color: silver;
+  	}
+  	.col-md-6{
+  		color:maroon;
+		position: relative;
+		left:37%;
+		top:40px;
+	}
+	.exampleInputEmail1:focus{
+			outline:none;
+	}		
+	.exampleInputPassword1:focus{
+			outline:none;
+	}
+	input{
+			 border-top-style: hidden;
+      		 border-right-style: hidden;
+     		 border-left-style: hidden;
+      		 border-bottom-style: groove;
+      		 background-color: silver;
+		}
+	.btn-btn-default{
+		border: none;
+		background-color: silver;
+	}
+  </style>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script>
+       function validateform()
+       {
+        var name = document.getElementById("exampleInputName1").value;          
+        var email = document.getElementById("exampleInputEmail1").value;          
+        var age = document.getElementById("exampleInputAge1").value;          
+        var Cpassword = document.getElementById("exampleInputPassword2").value;          
+        var password = document.getElementById("exampleInputPassword1").value;          
+        var letters = /^[A-Za-z]+$/;
+       
+        var pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+       if (!name.match(letters))                                  
+        { 
+            window.alert("Please input alphabet characters only."); 
+            name.focus(); 
+            return false; 
+        } 
+       
+        console.log(password);
+        console.log(pattern);
+        console.log(password.match(pattern));
+        console.log(!password.match(pattern));
+        if(!password.match(pattern))
+        {
+            window.alert("Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters");
+            password.focus();
+            return false;
+        }
+
+        if (password != Cpassword)                        
+        { 
+            window.alert("Passwords not same!"); 
+            password.focus(); 
+            return false; 
+        }
+       }
+   </script>
+</head>
+<body>
+	 <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2><b>Sign-Up</b></h2>
+                    <h4>Please fill this form to create an account.</h4>
+                   
+                    <form method="post" onsubmit="return validateform()" name="Sign-Up">
+                        <div class="form-group">
+                            <label for="exampleInputName1"><h3>Full Name<h3></label>
+                            <input name="text" class="form-control" id="exampleInputName1" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputAge1"><h3>Age<h3></label>
+                            <input type="number" class="form-control" id="exampleInputAge1" name="age" placeholder="Age" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1"><h3>Email address<h3></label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                         
+                            <label for="exampleInputPassword1"><h3>Password</h3></label>
+ 							<input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password" required>
+                        </div>
+                         <div class="form-group">
+                         
+                            <label for="exampleInputPassword2"><h3>Confirm Password</h3></label>
+ 							<input type="password" class="form-control" id="exampleInputPassword2" name="Cpassword" placeholder="Confirm Password" required>
+                        </div>
+                        <br>
+                        <button type="submit" name="submit" class="btn-btn-default" ><span style="color:maroon" ><h4><b>SUBMIT</b></h4></span></button>
+                        <br><br>
+                        Already have an account? 
+                        <button type="button" name="forgot-password" class="btn-btn-default"><span style="color:blue"><u>Login here</u></span>.</button>
+              x      </form>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
